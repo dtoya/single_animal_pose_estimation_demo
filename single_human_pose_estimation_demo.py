@@ -12,7 +12,7 @@ from openvino.runtime import Core, get_version
 from detector import Detector
 from estimator import HumanPoseEstimator
 
-sys.path.append(str(Path(__file__).resolve() / 'common/python'))
+sys.path.append(str(Path(__file__).resolve().parents[0] / 'common/python'))
 
 import monitors
 from images_capture import open_images_capture
